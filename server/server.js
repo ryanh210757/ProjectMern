@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({limit: "30mb", extended: true}))
 app.use(cors())
 app.use('/posts', postRoutes)
 
-const uri = 'mongodb+srv://admin:m6BTd4ZtWvQ4uLqv@project.ifglflx.mongodb.net/'
+const uri = 'mongodb+srv://cheesecakes:yhYE5T9T8nne8ZAP@cheesecakes.frbv9ae.mongodb.net/?retryWrites=true&w=majority'
 const PORT = 4000 || process.env.PORT
 
 mongoose.connect(uri)
