@@ -32,7 +32,7 @@ export default function Post({post, setCurrentId}){
         <CardContent>
             <Typography variant="h7" color="gutterBottom">{showMenu ? `Show Less` : 'More Info'}</Typography>
             <ArrowDropDownIcon fontSize="small" onClick={() => setShowMenu(!showMenu)}/>
-            <Typography variant="h5" color="gutterBottom">{showMenu ? `${post.message}` : ''}</Typography>
+            <Typography variant="body2" color="textSecondary" component="p">{showMenu ? `${post.message}` : ''}</Typography>
 
         </CardContent>
         <CardActions className={classes.cardActions}>
