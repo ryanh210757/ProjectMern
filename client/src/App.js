@@ -1,12 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import { useDispatch } from 'react-redux'
-
 import {getPosts} from './actions/posts'
-
 import Posts from './components/Posts/Posts'
 import Form from './components/Form/Form'
 import "./index.css"
-import Navbar from './components/Navbar'
+
 
 export default function App(){
     const [currentId, setCurrentId] = useState(null)  //keep track of currentID
@@ -19,14 +17,8 @@ export default function App(){
 
     return (
         <>
-        
-          
-                            <Posts className="posts-container" setCurrentId={setCurrentId}/>
-               
-                 
-                            <Form currentId={currentId} setCurrentId={setCurrentId}/>
-                      
-             
+            <Posts className="posts-container" setCurrentId={setCurrentId}/>
+            <Form currentId={currentId} setCurrentId={setCurrentId}/>
         </>
     )
 }
