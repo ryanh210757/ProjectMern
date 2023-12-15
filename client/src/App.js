@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import {getPosts} from './actions/posts'
 import Posts from './components/Posts/Posts'
 import Form from './components/Form/Form'
+import Navbar from './components/Navbar'
 import "./index.css"
 
 
@@ -17,6 +18,7 @@ export default function App(){
 
     return (
         <>
+            <Navbar />
             <Posts className="posts-container" setCurrentId={setCurrentId}/>
             <Form currentId={currentId} setCurrentId={setCurrentId}/>
         </>
